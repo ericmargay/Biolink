@@ -35,7 +35,7 @@ const App = (() => {
   }
 
   function initTheme(){
-    const saved = localStorage.getItem('linktree-theme') || 'dark';
+    const saved = localStorage.getItem('linktree-theme') || 'light';
     setMode(saved);
     const t = document.getElementById('themeToggle');
     if(t) t.addEventListener('click', toggleTheme);
