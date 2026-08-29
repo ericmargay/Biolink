@@ -1,24 +1,39 @@
-# Biolink — Personal Bio Tool to link everything
+# Eric Margay — Biolink
 
-This project is a self-hosted alternative to Linktree, built only with HTML, CSS, and JavaScript.  
-It runs entirely on GitHub Pages without any external dependencies.
+Un jardín digital open source que reúne proyectos, CV, experiencia en Machine Learning, ingeniería de datos y sistemas embebidos.
 
-👉 **Live site:** [https://ericmargay.github.io/biolink/](https://ericmargay.github.io/biolink/)
+**Sitio:** [ericmargay.github.io/Biolink](https://ericmargay.github.io/Biolink/)
 
----
+## Lo especial
 
-## Features
-- **Public page — clean, responsive link hub with profile, avatar, badges, and clickable link cards.
-- **Admin panel — local editor for profile and links.
-  - Password-protected to prevent casual edits.
-  - Save locally in your browser (`localStorage`).
-  - Export / Import `data.json` to publish changes.
-- **SVG official icons** for common services (website, email, github, x, linkedin, instagram, facebook, youtube, tiktok, discord, telegram, whatsapp, spotify, soundcloud, twitch, bandcamp, medium, substack, paypal, patreon, kofi, amazon, shopify).
-- **Full-card click**: each link card is entirely clickable.
-- **Dark/Light theme toggle** with accent color customization.
+- Tres avatares animados hechos con CSS: medusa, bot y orbe.
+- Fondo generativo en Canvas que responde al cursor.
+- Soundtrack interactivo procesado con Web Audio API y activado al tocar el avatar. Toda la pantalla funciona como un pad XY: arriba conserva la señal limpia; abajo incrementa el efecto; izquierda aplica distorsión y derecha saturación.
+- Personalizador con paletas, color libre, densidad, velocidad, grano y reacciones al cursor.
+- Preferencias locales mediante `localStorage`.
+- Tarjetas externas y colecciones desplegables para proyectos, certificaciones, recomendaciones o cualquier categoría nueva.
+- Once logotipos sociales de demostración reutilizados desde el sprite local `icons/icons.svg`; se pueden quitar, reordenar o reemplazar desde `data.json`.
+- Diseño accesible, responsive y respetuoso de `prefers-reduced-motion`.
+- Sin frameworks, dependencias, cookies ni proceso de compilación.
 
----
+## Editar el contenido
 
-## How it works
-- All configuration is stored in `data.json`.
-- `index.html` fetches
+Los textos, redes, destinos y colecciones viven en `data.json`. La apariencia está en `css/styles.css` y la interacción en `js/app.js`.
+
+Una tarjeta puede tener `url` para abrir un enlace, o `collection` para mostrar una subsección dentro del sitio. Cada colección admite título, introducción y cualquier número de elementos. Esto permite convertir la plantilla en un perfil para música, diseño, investigación, educación o productos sin tocar JavaScript.
+
+## Probar localmente
+
+```bash
+python3 -m http.server 4173
+```
+
+Después abre `http://localhost:4173/`.
+
+## Publicar en GitHub Pages
+
+En **Settings → Pages**, selecciona **Deploy from a branch**, la rama `main` y la carpeta raíz. No se necesitan secretos ni servicios externos.
+
+## Licencia
+
+[MIT](LICENSE)

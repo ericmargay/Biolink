@@ -1,53 +1,53 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Links — Eric</title>
-  <meta name="description" content="Todos mis enlaces en un solo lugar." />
-  <meta property="og:title" content="Links — Eric" />
-  <meta property="og:description" content="Todos mis enlaces en un solo lugar." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="favicon.svg" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#08100f">
+  <title>Eric Margay — Systems that sense, learn & glow</title>
+  <meta name="description" content="Ingeniero de Machine Learning, datos y sistemas embebidos. Proyectos, experiencia y contacto de Eric Margay.">
+  <meta property="og:title" content="Eric Margay — Digital Garden"><meta property="og:description" content="Python, Machine Learning, hardware y luz interactiva."><meta property="og:type" content="profile">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="bg" aria-hidden="true"></div>
-  <main class="container">
-    <header id="profile" class="profile">
-      <div class="avatar-wrap">
-        <img id="avatar" alt="Avatar" />
-        <div id="avatar-fallback" class="avatar-fallback" aria-hidden="true"></div>
-      </div>
-      <div class="who">
-        <h1 id="name">Tu Nombre</h1>
-        <p id="bio">Tu descripción corta aquí.</p>
-        <div class="badges" id="badges"></div>
-      </div>
-      <button id="themeToggle" class="btn ghost" aria-label="Cambiar tema" title="Cambiar tema">◐</button>
+  <canvas id="ambient" aria-hidden="true"></canvas><div class="grain" aria-hidden="true"></div>
+  <button class="round-button customize-trigger" id="openCustomizer" aria-label="Abrir personalizador" title="Personalizar">✦</button>
+  <button class="round-button share-trigger" id="shareButton" aria-label="Compartir perfil" title="Compartir"><span aria-hidden="true">↗</span></button>
+  <main class="shell">
+    <header class="profile" id="top">
+      <p class="eyebrow"><span class="live-dot"></span> Plantilla open source · enlaces, colecciones y personalidad</p>
+      <button class="avatar-stage" id="avatarStage" type="button" aria-label="Activar paisaje sonoro desde el avatar">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="jelly avatar-art" data-avatar="jelly"><div class="jelly-cap"><i></i><i></i><i></i></div><div class="tentacles"><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="bot avatar-art" data-avatar="bot" hidden><span>EM</span><i></i><i></i></div>
+        <div class="orb-avatar avatar-art" data-avatar="orb" hidden><span></span></div>
+      </button>
+      <h1 id="profileName">Eric Margay</h1><p class="role" id="profileRole">Machine Learning & Python Data Engineer</p>
+      <p class="intro" id="profileBio">Convierto datos, electrónica y luz en sistemas que se sienten vivos.</p>
+      <nav class="socials" id="socials" aria-label="Redes y contacto"></nav>
+      <div class="sound-control"><button id="soundToggle" class="sound-button" aria-pressed="false"><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="soundLabel">Toca el avatar para activar el soundtrack</span></button><p>arriba: limpio · abajo: intenso · izquierda: distorsión · derecha: saturación</p></div>
     </header>
-
-    <section id="links" class="links"></section>
-
-    <footer class="foot">
-      <span class="tiny">© <span id="year"></span> • Hecho por ti</span>
+    <section class="link-section reveal" aria-labelledby="exploreTitle"><div class="section-heading"><p class="kicker">Elige una ruta</p><h2 id="exploreTitle">Más que enlaces</h2></div><div id="links" class="links"></div></section>
+    <section class="stack-section reveal" aria-labelledby="stackTitle"><div class="section-heading compact"><p class="kicker">Herramientas favoritas</p><h2 id="stackTitle">Mi constelación</h2></div><div class="marquee" aria-label="Tecnologías"><div>Python <span>✦</span> Airflow <span>✦</span> Docker <span>✦</span> ESP32 <span>✦</span> Raspberry Pi <span>✦</span> ML <span>✦</span> JavaScript <span>✦</span> IoT <span>✦</span></div></div></section>
+    <section class="contact-card reveal"><p class="kicker">¿Construimos algo?</p><h2>Datos con propósito.<br>Hardware con personalidad.</h2><a class="contact-button" href="mailto:ericmargay@gmail.com">Hablemos <span>↗</span></a></section>
+    <footer class="site-footer">
+      <nav class="legal-links" aria-label="Información del sitio"><button type="button" data-info="cookies">Cookies</button><span>·</span><button type="button" data-info="privacy">Privacidad</button><span>·</span><button type="button" data-info="report">Reportar</button><span>·</span><a href="#top">Explorar</a><span>·</span><button type="button" data-info="about">Acerca de</button></nav>
+      <a class="github-join" href="https://github.com/ericmargay/Biolink" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24"><use href="icons/icons.svg#github"></use></svg><span>Usa esta plantilla en GitHub</span><b>↗</b></a>
+      <span>© <span id="year"></span> · Open source</span>
     </footer>
   </main>
-
-  <svg width="0" height="0" class="hidden">
-    <defs>
-      <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="var(--accent)" />
-        <stop offset="1" stop-color="color-mix(in oklab, var(--accent), #000 25%)" />
-      </linearGradient>
-    </defs>
-  </svg>
-
+  <aside class="customizer" id="customizer" aria-hidden="true" aria-label="Personalizador">
+    <div class="customizer-head"><div><p class="kicker">Tu espacio</p><h2>Personalizador</h2></div><button class="close-button" id="closeCustomizer" aria-label="Cerrar">×</button></div>
+    <div class="control-group"><label>Avatar animado</label><div class="avatar-options" role="group" aria-label="Avatar animado"><button data-avatar-choice="jelly" class="active"><span class="mini-jelly">⌇</span>Medusa</button><button data-avatar-choice="bot"><span>◉</span>Bot</button><button data-avatar-choice="orb"><span>●</span>Orbe</button></div></div>
+    <div class="control-group"><label for="palette">Paleta</label><select id="palette"><option value="lagoon">Laguna eléctrica</option><option value="ember">Brasa digital</option><option value="violet">Noche ultravioleta</option><option value="paper">Papel solar</option></select></div>
+    <div class="control-group two-col"><label>Color de acento<input id="accent" type="color" value="#a7ff4f"></label><label>Densidad<input id="density" type="range" min="25" max="110" value="70"></label></div>
+    <div class="control-group"><label for="motion">Movimiento de fondo</label><input id="motion" type="range" min="0" max="100" value="64"></div>
+    <div class="control-group switches"><label><span>Grano cinematográfico</span><input id="grainToggle" type="checkbox" checked></label><label><span>Reacciones al cursor</span><input id="cursorToggle" type="checkbox" checked></label></div>
+    <button class="reset-button" id="resetSettings">Restaurar diseño original</button><p class="privacy-note">Tus cambios viven solo en este dispositivo.</p>
+  </aside>
+  <section class="collection-modal" id="collectionModal" role="dialog" aria-modal="true" aria-labelledby="collectionTitle" aria-hidden="true">
+    <div class="collection-head"><div><p class="kicker" id="collectionKicker">Colección</p><h2 id="collectionTitle">Título</h2><p id="collectionIntro"></p></div><button class="close-button" id="closeCollection" aria-label="Cerrar colección">×</button></div>
+    <div class="collection-grid" id="collectionGrid"></div>
+  </section>
+  <div class="scrim" id="scrim"></div><div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="js/app.js"></script>
-  <script>
-    App.initPublic();
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

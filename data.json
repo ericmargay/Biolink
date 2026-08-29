@@ -1,45 +1,41 @@
 {
-  "profile": {
-    "name": "Eric Margay",
-    "bio": "Ingeniero creativo — LEDs, audiovisual y software.",
-    "avatar": "",
-    "accent": "#7c6cff",
-    "badges": [
-      "⚡ Maker",
-      "🎧 Audio-reactivo",
-      "💡 LED Art"
-    ]
-  },
+  "profile": {"name":"Eric Margay","role":"Machine Learning & Python Data Engineer","bio":"Datos, electrónica y luz convertidos en experiencias útiles."},
+  "socials": [
+    {"icon":"email","label":"Correo","url":"mailto:ericmargay@gmail.com"},
+    {"icon":"github","label":"GitHub","url":"https://github.com/ericmargay"},
+    {"icon":"linkedin","label":"LinkedIn","url":"https://www.linkedin.com/in/ericmargay"},
+    {"icon":"x","label":"X","url":"https://x.com/"},
+    {"icon":"instagram","label":"Instagram","url":"https://instagram.com/"},
+    {"icon":"youtube","label":"YouTube","url":"https://youtube.com/"},
+    {"icon":"tiktok","label":"TikTok","url":"https://tiktok.com/"},
+    {"icon":"spotify","label":"Spotify","url":"https://spotify.com/"},
+    {"icon":"telegram","label":"Telegram","url":"https://telegram.org/"},
+    {"icon":"discord","label":"Discord","url":"https://discord.com/"},
+    {"icon":"whatsapp","label":"WhatsApp","url":"https://whatsapp.com/"}
+  ],
   "links": [
-    {
-      "icon": "github",
-      "title": "GitHub",
-      "url": "https://github.com/eric",
-      "visible": true
-    },
-    {
-      "icon": "x",
-      "title": "X (Twitter)",
-      "url": "https://x.com/eric",
-      "visible": true
-    },
-    {
-      "icon": "instagram",
-      "title": "Instagram",
-      "url": "https://instagram.com/eric",
-      "visible": true
-    },
-    {
-      "icon": "discord",
-      "title": "Discord",
-      "url": "https://discord.gg/invite",
-      "visible": true
-    },
-    {
-      "icon": "amazon",
-      "title": "Amazon Store",
-      "url": "https://amazon.com",
-      "visible": true
-    }
-  ]
+    {"icon":"github","eyebrow":"Código · experimentos · herramientas","title":"Proyectos seleccionados","description":"Una selección breve de repositorios interesantes, con contexto y acceso directo.","collection":"projects"},
+    {"icon":"education","eyebrow":"Cursos · credenciales · aprendizaje","title":"Dónde aprendí a hacer lo que hago","description":"Certificaciones y rutas de aprendizaje que sí puedo recomendar.","collection":"certifications"},
+    {"icon":"spark","eyebrow":"Libros · herramientas · referencias","title":"Lo que recomiendo","description":"Recursos curados por utilidad, no una lista interminable.","collection":"recommendations"},
+    {"icon":"document","eyebrow":"Trayectoria completa","title":"Curriculum Vitae interactivo","description":"Experiencia, formación, investigación y habilidades en detalle.","url":"https://ericmargay.github.io/Curriculum_Vitae/"},
+    {"icon":"linkedin","eyebrow":"Conexiones profesionales","title":"LinkedIn","description":"Para colaboraciones, oportunidades y conversación profesional.","url":"https://www.linkedin.com/in/ericmargay"}
+  ],
+  "collections": {
+    "projects": {"kicker":"Código abierto","title":"Proyectos seleccionados","intro":"Pocos proyectos, elegidos por lo que enseñan o resuelven.","items":[
+      {"icon":"github","title":"Biolink","meta":"HTML · CSS · Canvas · Web Audio","description":"La plantilla open source que estás viendo: personalizable, animada y sin dependencias.","url":"https://github.com/ericmargay/Biolink"},
+      {"icon":"github","title":"Curriculum Vitae","meta":"Diseño web · Accesibilidad · GitHub Pages","description":"CV bilingüe con variantes especializadas para software, educación y hardware.","url":"https://github.com/ericmargay/Curriculum_Vitae"},
+      {"icon":"code","title":"Más experimentos","meta":"Prototipos · IoT · visualización","description":"El resto de repositorios y pruebas públicas, directamente en GitHub.","url":"https://github.com/ericmargay?tab=repositories"}
+    ]},
+    "certifications": {"kicker":"Aprendizaje verificable","title":"Dónde aprendí","intro":"Formación académica y cursos que aportaron herramientas concretas.","items":[
+      {"icon":"education","title":"Licenciatura en Tecnología","meta":"UNAM · CFATA · 2016","description":"Física de la energía, electrónica, programación y robótica.","url":"https://www.unam.mx/"},
+      {"icon":"certificate","title":"Introduction to Data Science with Python","meta":"edX · diciembre 2024","description":"Fundamentos prácticos de análisis y ciencia de datos con Python.","url":"https://courses.edx.org/certificates/846cb3393f244650b7f9859f1d517a48"},
+      {"icon":"certificate","title":"6.00.1x — Programming Using Python","meta":"MITx · marzo 2024","description":"Introducción rigurosa a ciencias de la computación y programación.","url":"https://courses.edx.org/certificates/3fa06712cd6d4a958d91b57e9aebf2d1"}
+    ]},
+    "recommendations": {"kicker":"Selección personal","title":"Lo que recomiendo","intro":"Puntos de partida útiles para aprender haciendo.","items":[
+      {"icon":"book","title":"Python Crash Course","meta":"Libro · Eric Matthes","description":"Una introducción directa a Python con proyectos suficientemente concretos.","url":"https://ehmatthes.github.io/pcc_3e/"},
+      {"icon":"code","title":"Build something physical","meta":"Raspberry Pi · ESP32","description":"Combinar software con sensores vuelve visibles conceptos que suelen parecer abstractos.","url":"https://www.raspberrypi.com/learn/"},
+      {"icon":"website","title":"Documenta mientras construyes","meta":"GitHub · notebooks · diagramas","description":"Un proyecto explicado con claridad suele valer más que cinco repositorios abandonados.","url":"https://docs.github.com/es/get-started/writing-on-github"}
+    ]}
+  },
+  "draftNote": "What I don't like about LED strips is that it gives very concentrated pointly lives that hurts the ice when you react security into small woods no hour"
 }
