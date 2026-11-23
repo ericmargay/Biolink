@@ -28,6 +28,7 @@
     ]},
     "certifications": {"kicker":"Aprendizaje verificable","title":"Dónde aprendí","intro":"Formación académica y cursos que aportaron herramientas concretas.","items":[
       {"icon":"education","title":"Licenciatura en Tecnología","meta":"UNAM · CFATA · 2016","description":"Física de la energía, electrónica, programación y robótica.","url":"https://www.unam.mx/"},
+      {"icon":"certificate","title":"CS109xa — Machine Learning and AI with Python","meta":"HarvardX · noviembre 2026","description":"Machine learning e inteligencia artificial con Python, de Harvard University en edX.","url":"https://courses.edx.org/certificates/5517ced34969468f896e629d7a69f8bf"},
       {"icon":"certificate","title":"Introduction to Data Science with Python","meta":"edX · diciembre 2024","description":"Fundamentos prácticos de análisis y ciencia de datos con Python.","url":"https://courses.edx.org/certificates/846cb3393f244650b7f9859f1d517a48"},
       {"icon":"certificate","title":"6.00.1x — Programming Using Python","meta":"MITx · marzo 2024","description":"Introducción rigurosa a ciencias de la computación y programación.","url":"https://courses.edx.org/certificates/3fa06712cd6d4a958d91b57e9aebf2d1"}
     ]},
